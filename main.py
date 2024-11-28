@@ -20,9 +20,9 @@ ADMIN_ID = int(os.getenv("ADMIN_ID"))
 
 
 async def approve_request(chat_join: ChatJoinRequest, bot: Bot):
-    msg = ("Olá beleza 👋🏻👸🏻 Estou aqui para te mostrar uma maneira legal de ganhar comigo.\n"
-           "\nSou o bot da Samira e posso te enviar as melhores ofertas se você me escrever agora mesmo 🤖\n"
-           "\nMe escreve 👉🏻@Samira_Rod_vip")
+    msg = ("Hola cariño 👋🏻👸🏻 estoy aquí para enseñarte una forma genial de ganar conmigo.\n"
+           "\nSoy el bot de Sofia y puedo enviarte las mejores ofertas si me escribes ahora mismo 🤖.\n"
+           "\nEscríbeme a 👉🏻@Sofia_Su_VIP")
     await bot.send_message(chat_id=chat_join.from_user.id, text=msg)
     await chat_join.approve()
 
